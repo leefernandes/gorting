@@ -39,14 +39,16 @@ func runSorts(size int) {
 
 	s1 := copySlice(og)
 	s2 := copySlice(og)
+	s3 := copySlice(og)
 
 	p := message.NewPrinter(language.English)
 	p.Printf("sort []int of length %d\n", size)
 
 	stdSorted := stdSort(s1)
-
+	quickSorted := quicksort(s3)
 	bubbleSorted := bubbleSort(s2)
 
+	compareSorted("quick sort", quickSorted, stdSorted, og)
 	compareSorted("bubble sort", bubbleSorted, stdSorted, og)
 }
 
