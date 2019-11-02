@@ -1,11 +1,11 @@
-package main
+package bubble
 
 import (
-	"log"
+	"fmt"
 	"time"
 )
 
-func bubbleSort(s []int) []int {
+func Sort(s []int) []int {
 	start := time.Now()
 
 	for i := len(s); i > 0; i-- {
@@ -18,6 +18,6 @@ func bubbleSort(s []int) []int {
 		}
 	}
 	elapsed := time.Since(start)
-	log.Printf("bubble sort took %s\n", elapsed)
+	fmt.Printf("bubble.Sort %s\n", elapsed)
 	return s
 }
