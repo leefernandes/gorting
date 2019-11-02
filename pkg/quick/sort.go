@@ -1,32 +1,32 @@
-package main
+package quick
 
 import (
-	"log"
+	"fmt"
 	"time"
 )
 
-func quicksort(s []int) []int {
+func Sort(s []int) []int {
 	start := time.Now()
 
-	quick(s, 0, len(s))
+	Quicksort(s, 0, len(s))
 
 	elapsed := time.Since(start)
-	log.Printf("quicksort took %s\n", elapsed)
+	fmt.Printf("quick.Sort %s\n", elapsed)
 	//fmt.Println(len(s), s)
 	return s
 }
 
-func quick(s []int, start int, length int) {
+func Quicksort(s []int, start int, length int) {
 	end := length - 1
 	if start >= end {
 		return
 	}
-	p := partition(s, start, length)
-	quick(s, start, p)
-	quick(s, p+1, length)
+	p := Partition(s, start, length)
+	Quicksort(s, start, p)
+	Quicksort(s, p+1, length)
 }
 
-func partition(s []int, start int, length int) int {
+func Partition(s []int, start int, length int) int {
 	end := length - 1
 	p := s[end]
 	pI := start
