@@ -6,10 +6,10 @@ import (
 	"sort"
 	"time"
 
-	"github.com/ItsLeeOwen/gorting/pkg/bubble"
-	"github.com/ItsLeeOwen/gorting/pkg/custom3"
-	"github.com/ItsLeeOwen/gorting/pkg/quick"
-	"github.com/ItsLeeOwen/gorting/pkg/util"
+	"github.com/leefernandes/gorting/pkg/bubble"
+	"github.com/leefernandes/gorting/pkg/custom3"
+	"github.com/leefernandes/gorting/pkg/quick"
+	"github.com/leefernandes/gorting/pkg/util"
 	"golang.org/x/text/language"
 	"golang.org/x/text/message"
 )

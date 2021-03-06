@@ -5,8 +5,8 @@ import (
 	"sync"
 	"time"
 
-	"github.com/ItsLeeOwen/gorting/pkg/quick"
-	"github.com/ItsLeeOwen/gorting/pkg/util"
+	"github.com/leefernandes/gorting/pkg/quick"
+	"github.com/leefernandes/gorting/pkg/util"
 )
 
 // Sort partitions a slice into 4 blocks

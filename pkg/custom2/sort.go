@@ -4,7 +4,7 @@ import (
 	"fmt"
 	"time"
 
-	"github.com/ItsLeeOwen/gorting/pkg/util"
+	"github.com/leefernandes/gorting/pkg/util"
 )
 
 // Sort uses subdivide sampling

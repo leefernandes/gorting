@@ -1,4 +1,4 @@
-module github.com/ItsLeeOwen/gorting
+module github.com/leefernandes/gorting
 
 go 1.13
 
